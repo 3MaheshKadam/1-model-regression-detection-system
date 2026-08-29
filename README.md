@@ -148,6 +148,10 @@ Run workflow**, checking "Run the full suite".
 **Requires a repo secret:** `GROQ_API_KEY` (Settings → Secrets and variables →
 Actions → New repository secret) — CI can't read your local `.env`.
 
+Verified end-to-end: a test PR reintroducing a guardrail-stripped prompt
+correctly failed the "Prompt Regression Eval" check on GitHub within ~1 minute,
+confirming the workflow genuinely blocks a regressed prompt from merging.
+
 ## Status
 
 - [x] 1. Golden dataset (62 cases)
