@@ -1,0 +1,13 @@
+.env
+.env.local
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Timestamped run archives are reproducible/regenerable and can get noisy;
+# keep results/baseline.json (the committed known-good baseline) tracked.
+results/raw_*.json
+results/latest_raw.json
+results/scored_*.json
+results/latest_scored.json

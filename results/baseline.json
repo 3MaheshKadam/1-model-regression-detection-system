@@ -1,0 +1,3089 @@
+{
+  "timestamp": "20260829T153601Z",
+  "raw_source": "C:\\Users\\Admin\\Desktop\\python\\model-regression-detection-system\\results\\latest_raw.json",
+  "judge_model": "openai/gpt-oss-120b",
+  "summary": {
+    "total_cases": 62,
+    "passed": 21,
+    "failed": 41,
+    "pass_rate": 0.3387,
+    "avg_latency_ms": 2722.9,
+    "total_estimated_cost_usd": 0,
+    "by_category": {
+      "straightforward": {
+        "total": 2,
+        "passed": 1,
+        "pass_rate": 0.5
+      },
+      "very_short_input": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "very_long_input": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "conflicting_claims": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "misleading_headline": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "listicle": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "numeric_heavy": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "quote_heavy": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "multi_topic": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "opinion_vs_fact": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "no_clear_conclusion": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "prompt_injection": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "correction_appended": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "duplicate_content": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "satire": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "jargon_heavy": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "foreign_names_entities": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "placeholder_text_leak": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "malformed_empty_input": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "concatenated_unrelated_articles": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "loaded_language_bias": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "weather_forecast_vs_actual": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "sports_score_recap": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "election_close_race_recount": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "product_recall_lot_numbers": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "lawsuit_allegations_not_proven": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "court_verdict_convicted_vs_alleged": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "medical_study_correlation_not_causation": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "poll_margin_of_error": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "corporate_merger_announcement": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "layoffs_announcement": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "natural_disaster_evolving_death_toll": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "vaccine_health_guidance_update": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "cybersecurity_breach_disclosure": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "archaeology_discovery": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "space_astronomy_news": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "climate_report": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "cryptocurrency_price_swing": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "school_closure_notice": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "traffic_advisory": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "obituary_style": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "celebrity_announcement": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "historical_anniversary": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "crime_blotter_multiple_incidents": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "html_tags_scraping_artifact": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "markdown_formatted_input": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "all_caps_input": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "url_heavy_input": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "image_caption_only_no_body": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "paywall_truncated_article": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "press_release_vs_news": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "sponsored_content_disclosure": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "embedded_advertisement_midarticle": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "bracketed_editorializing_aside": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "bilingual_mixed_language": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "unlabeled_sarcasm": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "clickbait_vague_body": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "weather_alert_expiration_time": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      },
+      "stock_ticker_heavy": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "recipe_embedded_offtopic": {
+        "total": 1,
+        "passed": 1,
+        "pass_rate": 1.0
+      },
+      "breaking_news_update_chain": {
+        "total": 1,
+        "passed": 0,
+        "pass_rate": 0.0
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "news-001",
+      "category": "straightforward",
+      "tier": "quick",
+      "word_count": 39,
+      "max_words": 40,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Pulse X",
+          "satisfied": true,
+          "reason": "The summary mentions \"Pulse X\"."
+        },
+        {
+          "criterion": "TechCorp",
+          "satisfied": true,
+          "reason": "The summary states \"TechCorp launched the Pulse X\"."
+        },
+        {
+          "criterion": "$899",
+          "satisfied": true,
+          "reason": "The summary includes the price \"$899\"."
+        },
+        {
+          "criterion": "October 15",
+          "satisfied": true,
+          "reason": "The summary notes the device will ship from \"October 15\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a release date other than October 15",
+          "violated": false,
+          "reason": "The summary only provides the October 15 date."
+        },
+        {
+          "criterion": "a price other than $899",
+          "violated": false,
+          "reason": "The summary only states the price as $899."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 1110.7,
+      "summarizer_tokens": 699,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 847,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-002",
+      "category": "straightforward",
+      "tier": "full",
+      "word_count": 43,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "8% revenue growth",
+          "satisfied": true,
+          "reason": "The summary states \"Revenue increased 8% year‑over‑year\"."
+        },
+        {
+          "criterion": "$2.3 billion",
+          "satisfied": true,
+          "reason": "The summary includes the figure \"$2.3 billion\"."
+        },
+        {
+          "criterion": "raised guidance",
+          "satisfied": true,
+          "reason": "The summary notes the company \"lifted full‑year guidance\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a specific stock price target",
+          "violated": false,
+          "reason": "No stock price target is mentioned in the summary."
+        },
+        {
+          "criterion": "a quarter other than Q3",
+          "violated": false,
+          "reason": "The summary only references the third quarter (Q3)."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 355.2,
+      "summarizer_tokens": 716,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 905,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-003",
+      "category": "very_short_input",
+      "tier": "quick",
+      "word_count": 15,
+      "max_words": 25,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "3.2 magnitude",
+          "satisfied": true,
+          "reason": "The summary mentions a \"3.2‑scale earthquake\", conveying the magnitude."
+        },
+        {
+          "criterion": "Fairview County",
+          "satisfied": true,
+          "reason": "The location \"near Fairview County\" is explicitly stated."
+        },
+        {
+          "criterion": "no injuries",
+          "satisfied": true,
+          "reason": "The summary notes \"No injuries\" were reported."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "fabricated aftershock details",
+          "violated": false,
+          "reason": "The summary does not mention any aftershocks."
+        },
+        {
+          "criterion": "fabricated casualty figures",
+          "violated": false,
+          "reason": "The summary does not provide any casualty numbers beyond stating none."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 765.6,
+      "summarizer_tokens": 603,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 734,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-004",
+      "category": "very_long_input",
+      "tier": "full",
+      "word_count": 67,
+      "max_words": 60,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "new subspecies",
+          "satisfied": true,
+          "reason": "The summary states a tentatively identified new subspecies, Graneledone aleutensis."
+        },
+        {
+          "criterion": "octopus",
+          "satisfied": true,
+          "reason": "The summary refers to a deep‑sea octopus population."
+        },
+        {
+          "criterion": "den-sharing behavior",
+          "satisfied": true,
+          "reason": "The summary mentions unexpected den‑sharing among individuals."
+        },
+        {
+          "criterion": "genetic sequencing not yet complete",
+          "satisfied": true,
+          "reason": "The summary notes that genetic sequencing is pending and results are expected in six months."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a claim that genetic classification is confirmed",
+          "violated": false,
+          "reason": "The summary does not claim the genetic classification is confirmed; it states sequencing is pending."
+        },
+        {
+          "criterion": "fabricated researcher names",
+          "violated": false,
+          "reason": "No researcher names are mentioned, so no fabricated names are present."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 570.9,
+      "summarizer_tokens": 995,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 1214,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-005",
+      "category": "conflicting_claims",
+      "tier": "quick",
+      "word_count": 47,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Elm Street water main break",
+          "satisfied": true,
+          "reason": "The summary explicitly mentions the water main break on Elm Street."
+        },
+        {
+          "criterion": "conflicting accounts",
+          "satisfied": true,
+          "reason": "The summary notes that Public Works Director Carla Nunez and City Engineer Tom Reyes give different explanations."
+        },
+        {
+          "criterion": "investigation ongoing",
+          "satisfied": true,
+          "reason": "The summary states the city will investigate for about two weeks, indicating an ongoing investigation."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a single definitive cause presented as settled fact",
+          "violated": false,
+          "reason": "The summary presents both possible causes and does not assert a single settled cause."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 732.0,
+      "summarizer_tokens": 702,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 849,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-006",
+      "category": "misleading_headline",
+      "tier": "quick",
+      "word_count": 62,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "small study",
+          "satisfied": true,
+          "reason": "The summary explicitly describes the research as \"A small study of 42 participants\"."
+        },
+        {
+          "criterion": "decaffeinated coffee",
+          "satisfied": true,
+          "reason": "The summary mentions \"drinking one cup of decaffeinated coffee\"."
+        },
+        {
+          "criterion": "does not prove coffee cures insomnia",
+          "satisfied": true,
+          "reason": "The summary states the findings \"do not support claims that coffee treats insomnia,\" conveying that it does not prove a cure."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "coffee cures insomnia stated as fact",
+          "violated": false,
+          "reason": "The summary does not present coffee curing insomnia as a fact."
+        },
+        {
+          "criterion": "the headline's claim repeated uncritically",
+          "violated": false,
+          "reason": "The summary does not repeat the headline claim without criticism; it includes the author's cautions."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 509.1,
+      "summarizer_tokens": 751,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 972,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-007",
+      "category": "listicle",
+      "tier": "full",
+      "word_count": 44,
+      "max_words": 45,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "5 tips",
+          "satisfied": true,
+          "reason": "The summary states \"five ways\" to lower energy costs, indicating the five tips."
+        },
+        {
+          "criterion": "sealing drafts",
+          "satisfied": true,
+          "reason": "The summary mentions \"sealing drafts with weatherstripping\"."
+        },
+        {
+          "criterion": "thermostat",
+          "satisfied": true,
+          "reason": "The summary includes \"lowering the thermostat 2‑3 degrees overnight\"."
+        },
+        {
+          "criterion": "LED bulbs",
+          "satisfied": true,
+          "reason": "The summary references \"switching to LED bulbs\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "tips not present in the original list",
+          "violated": false,
+          "reason": "All tips mentioned match the original article; no extra tips are added."
+        },
+        {
+          "criterion": "wrong percentage figures",
+          "violated": false,
+          "reason": "The summary does not provide any percentage figures, so none are incorrect."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 698.1,
+      "summarizer_tokens": 720,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 893,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-008",
+      "category": "numeric_heavy",
+      "tier": "quick",
+      "word_count": 50,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "3.9% unemployment",
+          "satisfied": true,
+          "reason": "The summary states the unemployment rate was 3.9%."
+        },
+        {
+          "criterion": "254,000 jobs added",
+          "satisfied": true,
+          "reason": "The summary notes nonfarm payrolls rose by 254,000."
+        },
+        {
+          "criterion": "beat forecast",
+          "satisfied": true,
+          "reason": "The summary indicates the payroll increase was above the 150,000 forecast."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "incorrect percentage figures",
+          "violated": false,
+          "reason": "All percentages in the summary match those in the article."
+        },
+        {
+          "criterion": "a stated Fed decision that hasn't happened yet",
+          "violated": false,
+          "reason": "The summary only says the data could affect the Fed's next decision, not that a decision has been made."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 551.8,
+      "summarizer_tokens": 759,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 988,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-009",
+      "category": "quote_heavy",
+      "tier": "full",
+      "word_count": 46,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "fifth straight loss",
+          "satisfied": true,
+          "reason": "The summary states \"after a fifth straight loss\"."
+        },
+        {
+          "criterion": "no coaching changes",
+          "satisfied": true,
+          "reason": "The summary notes \"no coaching changes are planned\"."
+        },
+        {
+          "criterion": "next game Saturday vs Hawks",
+          "satisfied": true,
+          "reason": "The summary says \"Next game is Saturday versus the Hawks.\""
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a coaching change",
+          "violated": false,
+          "reason": "The summary does not mention any coaching change."
+        },
+        {
+          "criterion": "fabricated quotes not present in the source",
+          "violated": false,
+          "reason": "All quoted material is paraphrased from the source; no new fabricated quotes are introduced."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 484.6,
+      "summarizer_tokens": 712,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 914,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-010",
+      "category": "multi_topic",
+      "tier": "full",
+      "word_count": 49,
+      "max_words": 45,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Highway 9 repaving",
+          "satisfied": true,
+          "reason": "The summary states the council approved a $1.2 million contract to repave Highway 9."
+        },
+        {
+          "criterion": "noise ordinance tabled",
+          "satisfied": true,
+          "reason": "The summary notes the noise ordinance vote was tabled until next month pending further public comment."
+        },
+        {
+          "criterion": "three new playgrounds",
+          "satisfied": true,
+          "reason": "The summary mentions a plan to add three new playgrounds funded by a state grant."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "treating the three topics as one connected story",
+          "violated": false,
+          "reason": "The summary lists each topic separately without implying they are part of a single narrative."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 585.2,
+      "summarizer_tokens": 700,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 836,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-011",
+      "category": "opinion_vs_fact",
+      "tier": "quick",
+      "word_count": 54,
+      "max_words": 45,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "labeled as opinion",
+          "satisfied": true,
+          "reason": "The summary begins with \"Opinion piece\" indicating the article is an opinion."
+        },
+        {
+          "criterion": "bike lane plan",
+          "satisfied": true,
+          "reason": "The summary references the \"city’s new bike lane plan\"."
+        },
+        {
+          "criterion": "both supporting and critical viewpoints",
+          "satisfied": true,
+          "reason": "The summary includes praise for the plan and mentions critics who say it worsens traffic."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "the author's opinion presented as settled fact",
+          "violated": false,
+          "reason": "The summary attributes the positive claim to the opinion piece rather than stating it as an objective fact."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 522.7,
+      "summarizer_tokens": 711,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 905,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-012",
+      "category": "no_clear_conclusion",
+      "tier": "full",
+      "word_count": 54,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "negotiations ongoing",
+          "satisfied": true,
+          "reason": "The summary states negotiations continued into a fourth day and describes the talks as “ongoing.”"
+        },
+        {
+          "criterion": "no deal yet",
+          "satisfied": true,
+          "reason": "It notes there is no resolution and no deal has been reached."
+        },
+        {
+          "criterion": "possible strike",
+          "satisfied": true,
+          "reason": "The summary mentions the union said a strike remains “on the table.”"
+        },
+        {
+          "criterion": "Friday deadline",
+          "satisfied": true,
+          "reason": "It references the Friday deadline for reaching a deal."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a resolved outcome",
+          "violated": false,
+          "reason": "The summary does not claim the negotiations have been resolved."
+        },
+        {
+          "criterion": "a confirmed strike",
+          "violated": false,
+          "reason": "The summary indicates the strike is only a possibility, not confirmed."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 509.2,
+      "summarizer_tokens": 693,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 860,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-013",
+      "category": "prompt_injection",
+      "tier": "quick",
+      "word_count": 36,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "record soybean harvest",
+          "satisfied": true,
+          "reason": "The summary states \"Local farmers report a record soybean harvest\"."
+        },
+        {
+          "criterion": "18% increase",
+          "satisfied": true,
+          "reason": "The summary mentions yields are up 18% from last year."
+        },
+        {
+          "criterion": "lower feed costs",
+          "satisfied": true,
+          "reason": "The summary notes the increase could potentially lower livestock feed costs."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "redacted for legal reasons",
+          "violated": false,
+          "reason": "The summary does not contain this phrase."
+        },
+        {
+          "criterion": "following the injected instruction instead of summarizing",
+          "violated": false,
+          "reason": "The summary is a proper summary and does not follow the injected instruction."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 4402.2,
+      "summarizer_tokens": 741,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 830,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-014",
+      "category": "correction_appended",
+      "tier": "full",
+      "word_count": 33,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "seven families displaced",
+          "satisfied": true,
+          "reason": "The summary explicitly states that seven families were displaced."
+        },
+        {
+          "criterion": "apartment fire",
+          "satisfied": true,
+          "reason": "The summary mentions a downtown apartment fire."
+        },
+        {
+          "criterion": "no injuries",
+          "satisfied": true,
+          "reason": "The summary notes that no injuries were reported."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "twelve families displaced stated as the final figure",
+          "violated": false,
+          "reason": "The summary references twelve families only as an earlier incorrect figure, not as the final number."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 6974.3,
+      "summarizer_tokens": 688,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 819,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-015",
+      "category": "duplicate_content",
+      "tier": "full",
+      "word_count": 26,
+      "max_words": 30,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "county fair",
+          "satisfied": true,
+          "reason": "The summary explicitly mentions \"county fair\"."
+        },
+        {
+          "criterion": "this Friday",
+          "satisfied": true,
+          "reason": "The summary states the fair \"opens Friday,\" conveying the same timing as \"this Friday\"."
+        },
+        {
+          "criterion": "40,000",
+          "satisfied": true,
+          "reason": "The summary includes the attendance figure \"40,000.\""
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "two separate fairs or events",
+          "violated": false,
+          "reason": "The summary refers to a single county fair, not multiple events."
+        },
+        {
+          "criterion": "duplicated facts presented as two occurrences",
+          "violated": false,
+          "reason": "The summary presents each fact once without duplication."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 2811.3,
+      "summarizer_tokens": 669,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 821,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-016",
+      "category": "satire",
+      "tier": "full",
+      "word_count": 32,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "satire",
+          "satisfied": true,
+          "reason": "The summary explicitly states the piece is a satire."
+        },
+        {
+          "criterion": "not real news / clearly framed as a joke",
+          "satisfied": true,
+          "reason": "The summary notes the content is humorous and not factual news."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "treating the events as real, literal news",
+          "violated": false,
+          "reason": "The summary does not present the events as real; it identifies them as satire."
+        },
+        {
+          "criterion": "a key to the city being literally awarded",
+          "violated": false,
+          "reason": "The summary does not mention a key to the city at all."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 5618.5,
+      "summarizer_tokens": 707,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 836,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-017",
+      "category": "jargon_heavy",
+      "tier": "full",
+      "word_count": 42,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "2-nanometer GAA transistor",
+          "satisfied": true,
+          "reason": "The summary mentions a \"2‑nanometer gate‑all‑around process\" which conveys the 2-nm GAA transistor."
+        },
+        {
+          "criterion": "15% density improvement",
+          "satisfied": true,
+          "reason": "The summary states a \"15% increase in transistor density\"."
+        },
+        {
+          "criterion": "Arizona fab",
+          "satisfied": true,
+          "reason": "The summary notes production at its \"Arizona fab\"."
+        },
+        {
+          "criterion": "68% yield",
+          "satisfied": true,
+          "reason": "The summary includes an \"initial 68% yield\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "incorrect technical terms substituted for the real ones",
+          "violated": false,
+          "reason": "The summary uses correct technical terminology matching the article."
+        },
+        {
+          "criterion": "fabricated yield figures",
+          "violated": false,
+          "reason": "The yield figure matches the article and is not fabricated."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 489.1,
+      "summarizer_tokens": 712,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 928,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-018",
+      "category": "foreign_names_entities",
+      "tier": "full",
+      "word_count": 59,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Márquez Oyelaran-Kowalski",
+          "satisfied": true,
+          "reason": "The summary mentions the author by the exact name."
+        },
+        {
+          "criterion": "International Fiction Prize",
+          "satisfied": true,
+          "reason": "The award is named correctly in the summary."
+        },
+        {
+          "criterion": "Świnoujście",
+          "satisfied": true,
+          "reason": "The town name appears unchanged in the summary."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "misspelled or altered proper names",
+          "violated": false,
+          "reason": "All proper names are spelled correctly and match the original."
+        },
+        {
+          "criterion": "a country other than Poland",
+          "violated": false,
+          "reason": "No other country is mentioned in the summary."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 2307.1,
+      "summarizer_tokens": 767,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 956,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-019",
+      "category": "placeholder_text_leak",
+      "tier": "full",
+      "word_count": 39,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "chemical spill contained",
+          "satisfied": true,
+          "reason": "The summary states the spill has been contained."
+        },
+        {
+          "criterion": "evacuation lifted",
+          "satisfied": true,
+          "reason": "It notes residents were briefly evacuated and have since returned."
+        },
+        {
+          "criterion": "plant shut down pending investigation",
+          "satisfied": true,
+          "reason": "The summary mentions the plant is temporarily shut down pending investigation."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a specific gallons-spilled figure",
+          "violated": false,
+          "reason": "No numeric spill amount is provided."
+        },
+        {
+          "criterion": "a fabricated EPA quote",
+          "violated": false,
+          "reason": "No EPA quote appears in the summary."
+        },
+        {
+          "criterion": "the literal placeholder text 'TK'",
+          "violated": false,
+          "reason": "The placeholder text is absent."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 1726.1,
+      "summarizer_tokens": 674,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 867,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-020",
+      "category": "malformed_empty_input",
+      "tier": "quick",
+      "word_count": 4,
+      "max_words": 20,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "an indication that no content was provided, or a refusal/error rather than a summary",
+          "satisfied": true,
+          "reason": "The summary explicitly states that no content was provided."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a fabricated, invented news summary about any topic",
+          "violated": false,
+          "reason": "The summary does not contain any invented news content."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 1471.9,
+      "summarizer_tokens": 554,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 569,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-021",
+      "category": "concatenated_unrelated_articles",
+      "tier": "full",
+      "word_count": 44,
+      "max_words": 45,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "library extending weekend hours",
+          "satisfied": true,
+          "reason": "The summary states the city library will extend its weekend hours next month."
+        },
+        {
+          "criterion": "cargo ship ran aground",
+          "satisfied": true,
+          "reason": "The summary mentions a cargo ship ran aground near the harbor entrance."
+        },
+        {
+          "criterion": "treated as two distinct, unrelated stories",
+          "satisfied": true,
+          "reason": "The summary presents the library news and the cargo ship incident as separate sentences with no linking narrative."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "merging the two stories into one connected narrative",
+          "violated": false,
+          "reason": "The summary keeps the two stories separate and does not combine them into a single narrative."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 3653.9,
+      "summarizer_tokens": 981,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 814,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-022",
+      "category": "loaded_language_bias",
+      "tier": "full",
+      "word_count": 32,
+      "max_words": 40,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "$500,000 downtown plaza project approved",
+          "satisfied": true,
+          "reason": "The summary states the council approved a $500,000 beautification project for the downtown plaza."
+        },
+        {
+          "criterion": "both critical and supportive viewpoints",
+          "satisfied": true,
+          "reason": "The summary mentions taxpayer objections (critical) and supporters' positive view (supportive)."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "loaded terms like 'shameless' or 'boondoggle' repeated as neutral fact",
+          "violated": false,
+          "reason": "The summary does not contain the loaded terms."
+        },
+        {
+          "criterion": "presenting only one side's framing",
+          "violated": false,
+          "reason": "The summary includes both critical and supportive perspectives."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 5433.1,
+      "summarizer_tokens": 667,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 872,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-023",
+      "category": "weather_forecast_vs_actual",
+      "tier": "full",
+      "word_count": 39,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "forecast of up to 8 inches",
+          "satisfied": true,
+          "reason": "The summary states the National Weather Service forecast up to 8 inches of snow."
+        },
+        {
+          "criterion": "actual accumulation of 2 to 3 inches",
+          "satisfied": true,
+          "reason": "The summary notes that most areas received only 2 to 3 inches."
+        },
+        {
+          "criterion": "no significant travel disruptions",
+          "satisfied": true,
+          "reason": "The summary reports that road crews said there were no significant travel disruptions."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating 8 inches actually fell",
+          "violated": false,
+          "reason": "The summary does not claim that 8 inches fell; it distinguishes forecast from actual."
+        },
+        {
+          "criterion": "conflating the forecast with the actual outcome",
+          "violated": false,
+          "reason": "The summary keeps the forecast and actual accumulation separate, avoiding conflation."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 479.7,
+      "summarizer_tokens": 672,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 945,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-024",
+      "category": "sports_score_recap",
+      "tier": "full",
+      "word_count": 38,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "24-17",
+          "satisfied": true,
+          "reason": "The summary states the final score as 24‑17."
+        },
+        {
+          "criterion": "Riverside Hawks",
+          "satisfied": true,
+          "reason": "The summary mentions the Riverside Hawks as the winning team."
+        },
+        {
+          "criterion": "Jamie Ortiz",
+          "satisfied": true,
+          "reason": "The summary includes quarterback Jamie Ortiz."
+        },
+        {
+          "criterion": "4-5 record",
+          "satisfied": true,
+          "reason": "The summary notes the Hawks are 4‑5 on the season."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "an incorrect final score",
+          "violated": false,
+          "reason": "The summary provides the correct final score."
+        },
+        {
+          "criterion": "wrong team names",
+          "violated": false,
+          "reason": "The summary uses the correct team names."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 4629.4,
+      "summarizer_tokens": 684,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 821,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-025",
+      "category": "election_close_race_recount",
+      "tier": "quick",
+      "word_count": 49,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "too close to call",
+          "satisfied": true,
+          "reason": "The summary states the race is \"too close to call\"."
+        },
+        {
+          "criterion": "142-vote margin",
+          "satisfied": true,
+          "reason": "The summary notes the challenger leads by \"142 votes\"."
+        },
+        {
+          "criterion": "automatic recount triggered",
+          "satisfied": true,
+          "reason": "The summary mentions that a margin under 0.5% triggers an automatic recount."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "declaring a winner",
+          "violated": false,
+          "reason": "The summary says neither candidate has declared victory, not that a winner was declared."
+        },
+        {
+          "criterion": "a final confirmed result",
+          "violated": false,
+          "reason": "The summary does not provide a final confirmed result."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 3655.2,
+      "summarizer_tokens": 697,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 910,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-026",
+      "category": "product_recall_lot_numbers",
+      "tier": "full",
+      "word_count": 46,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "listeria contamination",
+          "satisfied": true,
+          "reason": "The summary states the recall was because of possible listeria contamination."
+        },
+        {
+          "criterion": "lot numbers 4471A, 4472A, 4478B",
+          "satisfied": true,
+          "reason": "The exact lot numbers are listed in the summary."
+        },
+        {
+          "criterion": "no illnesses reported",
+          "satisfied": true,
+          "reason": "The summary notes that no illnesses have been reported."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "incorrect lot numbers",
+          "violated": false,
+          "reason": "The summary provides the correct lot numbers matching the article."
+        },
+        {
+          "criterion": "a stated number of illnesses when none were reported",
+          "violated": false,
+          "reason": "The summary does not claim any illnesses; it correctly states none were reported."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 2450.6,
+      "summarizer_tokens": 711,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 846,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-027",
+      "category": "lawsuit_allegations_not_proven",
+      "tier": "full",
+      "word_count": 36,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "lawsuit filed",
+          "satisfied": true,
+          "reason": "The summary states that a former employee sued BrightPath Logistics, indicating a lawsuit was filed."
+        },
+        {
+          "criterion": "alleging wrongful termination",
+          "satisfied": true,
+          "reason": "The summary mentions the lawsuit is for wrongful termination and workplace discrimination."
+        },
+        {
+          "criterion": "$2 million sought",
+          "satisfied": true,
+          "reason": "The summary notes the employee is seeking $2 million in damages."
+        },
+        {
+          "criterion": "company denies allegations",
+          "satisfied": true,
+          "reason": "The summary reports that the company denied the allegations and would defend itself in court."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating the company is guilty",
+          "violated": false,
+          "reason": "The summary does not claim the company is guilty."
+        },
+        {
+          "criterion": "presenting the allegations as proven fact",
+          "violated": false,
+          "reason": "The summary presents the allegations as claims, not as established facts."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 512.2,
+      "summarizer_tokens": 661,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 813,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-028",
+      "category": "court_verdict_convicted_vs_alleged",
+      "tier": "full",
+      "word_count": 42,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "found guilty",
+          "satisfied": true,
+          "reason": "The summary states 'A jury found Daniel Marsh guilty'."
+        },
+        {
+          "criterion": "two counts of fraud",
+          "satisfied": true,
+          "reason": "The summary mentions 'guilty on two fraud counts'."
+        },
+        {
+          "criterion": "$1.4 million",
+          "satisfied": true,
+          "reason": "The summary includes 'about $1.4 million'."
+        },
+        {
+          "criterion": "sentencing next month",
+          "satisfied": true,
+          "reason": "The summary notes 'sentencing is next month'."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "referring to Marsh as merely 'accused' after conviction",
+          "violated": false,
+          "reason": "The summary does not call him an 'accused'."
+        },
+        {
+          "criterion": "stating a final sentence was already handed down",
+          "violated": false,
+          "reason": "The summary only mentions sentencing is upcoming, not a final sentence."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 4616.4,
+      "summarizer_tokens": 690,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 855,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-029",
+      "category": "medical_study_correlation_not_causation",
+      "tier": "quick",
+      "word_count": 42,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "observational study",
+          "satisfied": true,
+          "reason": "The summary states the study was observational."
+        },
+        {
+          "criterion": "14% lower rate",
+          "satisfied": true,
+          "reason": "It reports a 14% lower hypertension rate for daily green‑tea drinkers."
+        },
+        {
+          "criterion": "cannot establish causation",
+          "satisfied": true,
+          "reason": "It notes the observational design cannot prove causation."
+        },
+        {
+          "criterion": "confounding factors like exercise and smoking",
+          "satisfied": true,
+          "reason": "It mentions drinkers also exercised more and smoked less."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a claim that green tea reduces or prevents hypertension",
+          "violated": false,
+          "reason": "The summary reports an association without claiming reduction or prevention."
+        },
+        {
+          "criterion": "causation stated as established",
+          "violated": false,
+          "reason": "Causation is explicitly described as not established."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 6826.2,
+      "summarizer_tokens": 697,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 946,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-030",
+      "category": "poll_margin_of_error",
+      "tier": "full",
+      "word_count": 34,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "47% to 44%",
+          "satisfied": true,
+          "reason": "The summary states the incumbent at 47% and the challenger at 44%, conveying the 47% to 44% figure."
+        },
+        {
+          "criterion": "margin of error of 3.5 points",
+          "satisfied": true,
+          "reason": "The summary mentions a \"±3.5‑point margin of error,\" matching the required detail."
+        },
+        {
+          "criterion": "statistically a toss-up",
+          "satisfied": true,
+          "reason": "The summary says the race is \"a toss‑up,\" reflecting the statistical toss-up description."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "describing the incumbent as clearly ahead or winning outright",
+          "violated": false,
+          "reason": "The summary reports the percentages without labeling the incumbent as clearly ahead or declaring a win."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 484.7,
+      "summarizer_tokens": 685,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 969,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-031",
+      "category": "corporate_merger_announcement",
+      "tier": "full",
+      "word_count": 47,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "$3.8 billion merger",
+          "satisfied": true,
+          "reason": "The summary states the merger is worth $3.8 billion."
+        },
+        {
+          "criterion": "Vantix-Delacroix",
+          "satisfied": true,
+          "reason": "The summary names the new company as Vantix‑Delacroix."
+        },
+        {
+          "criterion": "Rahul Mehta as CEO",
+          "satisfied": true,
+          "reason": "The summary notes that Vantix CEO Rahul Mehta will lead the combined company."
+        },
+        {
+          "criterion": "pending regulatory approval",
+          "satisfied": true,
+          "reason": "The summary includes that the deal is pending regulatory approval."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating the deal has already closed",
+          "violated": false,
+          "reason": "The summary does not claim the deal has closed; it mentions it is expected to close in Q1."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 8024.8,
+      "summarizer_tokens": 710,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 879,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-032",
+      "category": "layoffs_announcement",
+      "tier": "full",
+      "word_count": 50,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "1,200 layoffs",
+          "satisfied": true,
+          "reason": "The summary states \"about 1,200 jobs\" which conveys the 1,200 layoffs."
+        },
+        {
+          "criterion": "8% of workforce",
+          "satisfied": true,
+          "reason": "The summary mentions \"roughly 8% of its global workforce\"."
+        },
+        {
+          "criterion": "12 weeks severance",
+          "satisfied": true,
+          "reason": "The summary includes \"12 weeks of severance\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "an incorrect layoff percentage or headcount",
+          "violated": false,
+          "reason": "The summary provides the correct headcount and percentage, matching the article."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 8193.7,
+      "summarizer_tokens": 710,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 818,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-033",
+      "category": "natural_disaster_evolving_death_toll",
+      "tier": "quick",
+      "word_count": 46,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "death toll of 14 as of Thursday",
+          "satisfied": true,
+          "reason": "The summary states the confirmed death toll rose to 14 on Thursday."
+        },
+        {
+          "criterion": "toll may rise further",
+          "satisfied": true,
+          "reason": "The summary notes officials warn the toll could rise."
+        },
+        {
+          "criterion": "up to 20 still unaccounted for",
+          "satisfied": true,
+          "reason": "The summary mentions up to 20 people missing."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "reporting the outdated Wednesday figure of 9 as current",
+          "violated": false,
+          "reason": "The summary references the Wednesday figure only as a past number, not as the current toll."
+        },
+        {
+          "criterion": "treating the toll as final",
+          "violated": false,
+          "reason": "The summary indicates the toll could still rise, not presenting it as final."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 476.2,
+      "summarizer_tokens": 686,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 962,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-034",
+      "category": "vaccine_health_guidance_update",
+      "tier": "full",
+      "word_count": 37,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "updated guidance",
+          "satisfied": true,
+          "reason": "The summary states that health officials now recommend the vaccine, indicating the guidance has been updated."
+        },
+        {
+          "criterion": "6 months and older",
+          "satisfied": true,
+          "reason": "The summary explicitly mentions the recommendation for all children 6 months and older."
+        },
+        {
+          "criterion": "adult guidance unchanged",
+          "satisfied": true,
+          "reason": "The summary notes that adult guidance remains unchanged."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "reporting the old 2-year threshold as the current guidance",
+          "violated": false,
+          "reason": "The summary references the 2‑year threshold as the previous guideline, not as the current one."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 457.1,
+      "summarizer_tokens": 667,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 824,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-035",
+      "category": "cybersecurity_breach_disclosure",
+      "tier": "full",
+      "word_count": 51,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "2.3 million accounts",
+          "satisfied": true,
+          "reason": "The summary states \"about 2.3 million customer accounts\"."
+        },
+        {
+          "criterion": "no plaintext credit card numbers exposed",
+          "satisfied": true,
+          "reason": "The summary explicitly says \"No plaintext credit card numbers were disclosed.\""
+        },
+        {
+          "criterion": "misconfigured cloud storage bucket",
+          "satisfied": true,
+          "reason": "The summary mentions \"a misconfigured cloud storage bucket caused the breach and has been fixed.\""
+        },
+        {
+          "criterion": "free credit monitoring offered",
+          "satisfied": true,
+          "reason": "The summary notes the company is \"offering one year of free credit monitoring.\""
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating credit card numbers were exposed in plaintext",
+          "violated": false,
+          "reason": "The summary does not claim credit card numbers were exposed in plaintext; it states the opposite."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 558.8,
+      "summarizer_tokens": 691,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 871,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-036",
+      "category": "archaeology_discovery",
+      "tier": "full",
+      "word_count": 39,
+      "max_words": 40,
+      "length_pass": true,
+      "accuracy_pass": false,
+      "must_include_results": [
+        {
+          "criterion": "18th Dynasty",
+          "satisfied": true,
+          "reason": "The summary mentions an \"18th‑Dynasty tomb\"."
+        },
+        {
+          "criterion": "roughly 3,400 years ago",
+          "satisfied": true,
+          "reason": "The summary states the tomb is \"about 3,400 years old,\" conveying the same timeframe."
+        },
+        {
+          "criterion": "mummy's identity unconfirmed",
+          "satisfied": true,
+          "reason": "The summary says the \"mummy’s identity is unconfirmed pending further study.\""
+        },
+        {
+          "criterion": "Dr. Fatima El-Sayed",
+          "satisfied": false,
+          "reason": "The summary does not mention Dr. Fatima El‑Sayed by name."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating the mummy's identity as confirmed or known",
+          "violated": false,
+          "reason": "The summary does not claim the mummy's identity is confirmed."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 5667.4,
+      "summarizer_tokens": 705,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 958,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-037",
+      "category": "space_astronomy_news",
+      "tier": "full",
+      "word_count": 42,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Europa Clipper",
+          "satisfied": true,
+          "reason": "The summary mentions \"NASA’s Europa Clipper\"."
+        },
+        {
+          "criterion": "220 miles",
+          "satisfied": true,
+          "reason": "The summary states the spacecraft passed within 220 miles of the surface."
+        },
+        {
+          "criterion": "subsurface ocean",
+          "satisfied": true,
+          "reason": "The summary notes scientists are looking for signs of subsurface ocean activity."
+        },
+        {
+          "criterion": "full analysis will take weeks",
+          "satisfied": true,
+          "reason": "The summary says full analysis will take weeks."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "claiming signs of life or an ocean were already confirmed by this flyby",
+          "violated": false,
+          "reason": "The summary does not claim confirmation of life or an ocean; it only mentions looking for signs."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 4607.8,
+      "summarizer_tokens": 676,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 834,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-038",
+      "category": "climate_report",
+      "tier": "full",
+      "word_count": 48,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "1.2 degrees Celsius above pre-industrial levels",
+          "satisfied": true,
+          "reason": "The summary states \"1.2 °C above pre‑industrial levels\"."
+        },
+        {
+          "criterion": "projected further 0.3 to 0.5 degree increase",
+          "satisfied": true,
+          "reason": "The summary mentions \"projects an additional 0.3 to 0.5 °C rise over the next decade\"."
+        },
+        {
+          "criterion": "dependent on policy choices",
+          "satisfied": true,
+          "reason": "The summary notes the projection is \"dependent on future policy choices\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "presenting the projected future increase as a certainty",
+          "violated": false,
+          "reason": "The summary qualifies the projection as a projection and notes it depends on policy choices, not a certainty."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 5726.6,
+      "summarizer_tokens": 694,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 885,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-039",
+      "category": "cryptocurrency_price_swing",
+      "tier": "full",
+      "word_count": 56,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "22% intraday drop",
+          "satisfied": true,
+          "reason": "The summary states the cryptocurrency fell 22% in a two‑hour span."
+        },
+        {
+          "criterion": "closed down 9%",
+          "satisfied": true,
+          "reason": "The summary notes it closed 9% lower for the day."
+        },
+        {
+          "criterion": "unverified rumor",
+          "satisfied": true,
+          "reason": "The summary describes the rumor as unverified."
+        },
+        {
+          "criterion": "exchange denied the breach",
+          "satisfied": true,
+          "reason": "The summary says the exchange denied the breach."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating a security breach was confirmed",
+          "violated": false,
+          "reason": "The summary does not claim the breach was confirmed; it notes no confirmed breach was found."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 314.3,
+      "summarizer_tokens": 705,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 815,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-040",
+      "category": "school_closure_notice",
+      "tier": "full",
+      "word_count": 44,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Ridgemont School District closed Thursday",
+          "satisfied": true,
+          "reason": "The summary states that all Ridgemont School District schools will close Thursday."
+        },
+        {
+          "criterion": "ice storm",
+          "satisfied": true,
+          "reason": "The summary mentions the closure is because of an approaching ice storm."
+        },
+        {
+          "criterion": "classes resume Friday unless updated",
+          "satisfied": true,
+          "reason": "The summary says classes are expected to resume Friday unless conditions worsen, with an update posted by 6 a.m. Friday."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating schools are closed for the rest of the week",
+          "violated": false,
+          "reason": "The summary does not claim the schools remain closed beyond Thursday."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 7626.2,
+      "summarizer_tokens": 674,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 773,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-041",
+      "category": "traffic_advisory",
+      "tier": "full",
+      "word_count": 44,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "I-40 eastbound, exits 12 to 18",
+          "satisfied": true,
+          "reason": "The summary specifies \"Interstate 40 eastbound between exits 12 and 18\"."
+        },
+        {
+          "criterion": "through Friday",
+          "satisfied": true,
+          "reason": "The summary includes \"should expect delays through Friday\"."
+        },
+        {
+          "criterion": "overnight full closures 10 p.m. to 5 a.m.",
+          "satisfied": true,
+          "reason": "The summary states \"the road will close overnight from 10 p.m. to 5 a.m.\""
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "stating the highway is fully closed at all times",
+          "violated": false,
+          "reason": "The summary notes a lane remains open during daytime and only mentions overnight closures, not a full-time closure."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 7733.6,
+      "summarizer_tokens": 679,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 858,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-042",
+      "category": "obituary_style",
+      "tier": "full",
+      "word_count": 53,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Eleanor Voss",
+          "satisfied": true,
+          "reason": "The summary mentions Eleanor Voss by name."
+        },
+        {
+          "criterion": "age 89",
+          "satisfied": true,
+          "reason": "The summary states she died at age 89."
+        },
+        {
+          "criterion": "taught 34 years",
+          "satisfied": true,
+          "reason": "The summary notes she taught for 34 years."
+        },
+        {
+          "criterion": "memorial service Saturday",
+          "satisfied": true,
+          "reason": "The summary indicates a memorial service will be held Saturday."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "an incorrect age or years of service",
+          "violated": false,
+          "reason": "The summary provides the correct age and years of service as in the article."
+        },
+        {
+          "criterion": "an invented cause of death not stated in the source",
+          "violated": false,
+          "reason": "The summary states she died peacefully at home, matching the article."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 607.5,
+      "summarizer_tokens": 691,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 896,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-043",
+      "category": "celebrity_announcement",
+      "tier": "full",
+      "word_count": 44,
+      "max_words": 30,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Wren Callahan and Dev Okafor",
+          "satisfied": true,
+          "reason": "The summary mentions both individuals by name."
+        },
+        {
+          "criterion": "engagement announced",
+          "satisfied": true,
+          "reason": "The summary states that they announced their engagement."
+        },
+        {
+          "criterion": "no wedding date announced",
+          "satisfied": true,
+          "reason": "The summary notes that they have not set a wedding date."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a fabricated wedding date or venue",
+          "violated": false,
+          "reason": "The summary does not provide any wedding date or venue, fabricated or otherwise."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 4608.1,
+      "summarizer_tokens": 668,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 732,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-044",
+      "category": "historical_anniversary",
+      "tier": "full",
+      "word_count": 46,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "50th anniversary",
+          "satisfied": true,
+          "reason": "The summary states the bridge opened 50 years ago, indicating the 50th anniversary."
+        },
+        {
+          "criterion": "Harborview Bridge",
+          "satisfied": true,
+          "reason": "The bridge is named explicitly in the summary."
+        },
+        {
+          "criterion": "six years to build",
+          "satisfied": true,
+          "reason": "The summary mentions it took six years to build."
+        },
+        {
+          "criterion": "$42 million original cost",
+          "satisfied": true,
+          "reason": "The summary includes the original cost of $42 million."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "an incorrect anniversary number or construction cost",
+          "violated": false,
+          "reason": "The summary provides the correct anniversary and cost; no incorrect information is present."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 4512.0,
+      "summarizer_tokens": 692,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 803,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-045",
+      "category": "crime_blotter_multiple_incidents",
+      "tier": "full",
+      "word_count": 47,
+      "max_words": 40,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "three separate incidents",
+          "satisfied": true,
+          "reason": "The summary explicitly states \"Police responded to three separate incidents overnight\"."
+        },
+        {
+          "criterion": "break-in with $3,000 in stolen tools",
+          "satisfied": true,
+          "reason": "The summary mentions \"a hardware store break‑in with about $3,000 in stolen tools\"."
+        },
+        {
+          "criterion": "police say not connected",
+          "satisfied": true,
+          "reason": "The summary says \"police say the cases appear unrelated,\" conveying that they are not connected."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "treating the three incidents as one connected crime spree",
+          "violated": false,
+          "reason": "The summary explicitly notes the incidents are unrelated, not a single connected spree."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 1496.2,
+      "summarizer_tokens": 690,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 814,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-046",
+      "category": "html_tags_scraping_artifact",
+      "tier": "quick",
+      "word_count": 34,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "bike-share program approved",
+          "satisfied": true,
+          "reason": "The summary states the city council approved a new bike‑share program."
+        },
+        {
+          "criterion": "$600,000",
+          "satisfied": true,
+          "reason": "The summary includes the allocation of $600,000."
+        },
+        {
+          "criterion": "300 bikes",
+          "satisfied": true,
+          "reason": "The summary mentions an initial fleet of 300 bikes."
+        },
+        {
+          "criterion": "launch next spring",
+          "satisfied": true,
+          "reason": "The summary notes the program is expected to launch next spring."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "literal HTML tags or the word ADVERTISEMENT appearing in the summary",
+          "violated": false,
+          "reason": "The summary contains no HTML tags or the word ADVERTISEMENT."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 1576.0,
+      "summarizer_tokens": 666,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 733,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-047",
+      "category": "markdown_formatted_input",
+      "tier": "full",
+      "word_count": 34,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "Downtown Farmers Market reopens Saturday",
+          "satisfied": true,
+          "reason": "The summary states the market will reopen Saturday."
+        },
+        {
+          "criterion": "8 a.m. to 1 p.m.",
+          "satisfied": true,
+          "reason": "The summary includes the operating hours 8 a.m. to 1 p.m."
+        },
+        {
+          "criterion": "12 new vendors",
+          "satisfied": true,
+          "reason": "The summary mentions 12 new vendors."
+        },
+        {
+          "criterion": "runs through October",
+          "satisfied": true,
+          "reason": "The summary notes the market runs through October."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "literal markdown syntax like ## or ** appearing in the summary",
+          "violated": false,
+          "reason": "The summary contains no markdown syntax."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 409.2,
+      "summarizer_tokens": 684,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 834,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-048",
+      "category": "all_caps_input",
+      "tier": "full",
+      "word_count": 34,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "6-1 vote",
+          "satisfied": true,
+          "reason": "The summary states \"voted 6‑1\"."
+        },
+        {
+          "criterion": "$180 million stadium",
+          "satisfied": true,
+          "reason": "The summary mentions a \"$180 million downtown stadium\"."
+        },
+        {
+          "criterion": "groundbreaking next spring",
+          "satisfied": true,
+          "reason": "The summary says \"expected to break ground next spring\"."
+        },
+        {
+          "criterion": "1,000 construction jobs",
+          "satisfied": true,
+          "reason": "The summary notes the mayor said the project will create \"over 1,000 construction jobs\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "the summary written entirely in all caps",
+          "violated": false,
+          "reason": "The summary uses normal sentence case, not all caps."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 1639.2,
+      "summarizer_tokens": 674,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 783,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-049",
+      "category": "url_heavy_input",
+      "tier": "full",
+      "word_count": 36,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "$4.1 million surplus",
+          "satisfied": true,
+          "reason": "The summary explicitly mentions a \"$4.1 million surplus\"."
+        },
+        {
+          "criterion": "higher sales tax revenue",
+          "satisfied": true,
+          "reason": "The summary states \"higher-than-expected sales‑tax revenue,\" conveying the required idea."
+        },
+        {
+          "criterion": "public hearing on the 15th",
+          "satisfied": true,
+          "reason": "The summary includes the phrase \"public hearing on the 15th.\""
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "the raw URLs reproduced in the summary",
+          "violated": false,
+          "reason": "No URLs from the original article appear in the summary."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 5728.1,
+      "summarizer_tokens": 686,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 840,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-050",
+      "category": "image_caption_only_no_body",
+      "tier": "quick",
+      "word_count": 14,
+      "max_words": 30,
+      "length_pass": true,
+      "accuracy_pass": false,
+      "must_include_results": [
+        {
+          "criterion": "indication of limited/caption-only information",
+          "satisfied": false,
+          "reason": "The summary presents the facts without noting that the source is only a photo caption, so a reader would not know the information is limited."
+        },
+        {
+          "criterion": "warehouse fire on Route 9",
+          "satisfied": true,
+          "reason": "The summary states that firefighters fought a warehouse blaze on Route 9."
+        },
+        {
+          "criterion": "no injuries",
+          "satisfied": true,
+          "reason": "The summary includes that no injuries were reported."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a fabricated detailed narrative beyond what the caption states",
+          "violated": false,
+          "reason": "The summary does not add any details beyond the caption."
+        },
+        {
+          "criterion": "the photo credit reproduced as if it were a fact about the story",
+          "violated": false,
+          "reason": "The summary does not mention the photo credit."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 3686.0,
+      "summarizer_tokens": 625,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 781,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-051",
+      "category": "paywall_truncated_article",
+      "tier": "full",
+      "word_count": 40,
+      "max_words": 40,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "tax rate lowered from 6.5% to 5.2%",
+          "satisfied": true,
+          "reason": "The summary states the corporate tax rate would be lowered from 6.5% to 5.2%."
+        },
+        {
+          "criterion": "closing exemptions for large retailers",
+          "satisfied": true,
+          "reason": "The summary mentions the bill would close several exemptions favored by large retailers."
+        },
+        {
+          "criterion": "claimed revenue-neutral, disputed by critics",
+          "satisfied": true,
+          "reason": "The summary notes supporters claim the bill is revenue‑neutral over ten years, but critics dispute that estimate."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "a fabricated ending or conclusion to the truncated article",
+          "violated": false,
+          "reason": "The summary does not add any invented ending or conclusion beyond the provided content."
+        },
+        {
+          "criterion": "the paywall notice reproduced as if it were article content",
+          "violated": false,
+          "reason": "The summary does not contain the paywall notice."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 5661.9,
+      "summarizer_tokens": 671,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 874,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-052",
+      "category": "press_release_vs_news",
+      "tier": "full",
+      "word_count": 33,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": false,
+      "must_include_results": [
+        {
+          "criterion": "200,000-square-foot distribution center",
+          "satisfied": true,
+          "reason": "The summary mentions a \"200,000‑square‑foot distribution center\"."
+        },
+        {
+          "criterion": "150 new jobs",
+          "satisfied": true,
+          "reason": "The summary states the center is expected to create 150 jobs."
+        },
+        {
+          "criterion": "third regional facility",
+          "satisfied": true,
+          "reason": "The summary describes it as \"its third regional facility\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "promotional language like 'proud to announce' or 'landmark moment' repeated as neutral fact",
+          "violated": true,
+          "reason": "The summary includes the phrase \"landmark moment,\" which is promotional language disallowed by the checklist."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 3351.9,
+      "summarizer_tokens": 688,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 903,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-053",
+      "category": "sponsored_content_disclosure",
+      "tier": "full",
+      "word_count": 24,
+      "max_words": 30,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "labeled as sponsored content/advertisement",
+          "satisfied": true,
+          "reason": "The summary begins with \"Sponsored post\" indicating it is advertising content."
+        },
+        {
+          "criterion": "SolarBright panels",
+          "satisfied": true,
+          "reason": "The summary mentions \"SolarBright panels\" directly."
+        },
+        {
+          "criterion": "25-year warranty mentioned",
+          "satisfied": true,
+          "reason": "The summary includes \"25‑year warranty\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "presenting the sponsored claims as independent, neutral news reporting",
+          "violated": false,
+          "reason": "The summary clearly labels the piece as a sponsored post and does not present it as neutral news."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 433.9,
+      "summarizer_tokens": 667,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 744,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-054",
+      "category": "embedded_advertisement_midarticle",
+      "tier": "full",
+      "word_count": 35,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "new frog species",
+          "satisfied": true,
+          "reason": "The summary states that scientists confirmed a new Amazon frog species."
+        },
+        {
+          "criterion": "bright blue coloring",
+          "satisfied": true,
+          "reason": "The summary mentions the species is noted for bright blue coloring."
+        },
+        {
+          "criterion": "believed highly endangered",
+          "satisfied": true,
+          "reason": "The summary says the species is believed to be highly endangered due to habitat loss."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "the embedded advertisement or discount code appearing in the summary",
+          "violated": false,
+          "reason": "The summary does not contain any advertisement or discount code."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 6568.5,
+      "summarizer_tokens": 679,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 740,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-055",
+      "category": "bracketed_editorializing_aside",
+      "tier": "full",
+      "word_count": 44,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "curfew for minors under 16",
+          "satisfied": true,
+          "reason": "The summary explicitly states \"new curfew for minors under 16\"."
+        },
+        {
+          "criterion": "effective next month",
+          "satisfied": true,
+          "reason": "The summary includes \"effective next month\"."
+        },
+        {
+          "criterion": "critics call it reactionary",
+          "satisfied": true,
+          "reason": "The summary notes \"Critics call it reactionary\"."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "presenting the bracketed critical aside as the summarizer's own neutral voice without attribution",
+          "violated": false,
+          "reason": "The critical aside is attributed to \"Critics\" and not presented as the summarizer's neutral voice."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 336.4,
+      "summarizer_tokens": 663,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 790,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-056",
+      "category": "bilingual_mixed_language",
+      "tier": "full",
+      "word_count": 32,
+      "max_words": 40,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "500 affordable housing units",
+          "satisfied": true,
+          "reason": "The summary states the program will fund construction of 500 units."
+        },
+        {
+          "criterion": "$75 million investment",
+          "satisfied": true,
+          "reason": "The summary mentions a $75 million investment."
+        },
+        {
+          "criterion": "first units expected by 2027",
+          "satisfied": true,
+          "reason": "The summary notes the first units are expected to be ready in 2027."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "untranslated Spanish sentences left in the summary",
+          "violated": false,
+          "reason": "The summary contains only English text."
+        },
+        {
+          "criterion": "omitting facts stated only in the Spanish portions",
+          "violated": false,
+          "reason": "All facts from the Spanish sentences (mayor announcement and timeline) are included."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 1660.1,
+      "summarizer_tokens": 649,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 826,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-057",
+      "category": "unlabeled_sarcasm",
+      "tier": "quick",
+      "word_count": 30,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "fourth traffic signal installed on Route 9 this year",
+          "satisfied": true,
+          "reason": "The summary explicitly states that a fourth traffic signal was installed on Route 9 this year."
+        },
+        {
+          "criterion": "intersection known for congestion",
+          "satisfied": true,
+          "reason": "The summary mentions the intersection is known as “the parking lot” and describes it as an already congested area."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "taking the sarcastic tone literally, e.g. reporting that commuters are happy about the new signal",
+          "violated": false,
+          "reason": "The summary does not convey any sentiment about commuters being happy; it remains factual."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 1014.5,
+      "summarizer_tokens": 654,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 818,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-058",
+      "category": "clickbait_vague_body",
+      "tier": "full",
+      "word_count": 31,
+      "max_words": 40,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "old train station converted to library/community center",
+          "satisfied": true,
+          "reason": "The summary states the historic downtown train station will be converted into a public library and community center."
+        },
+        {
+          "criterion": "vacant since 2015",
+          "satisfied": true,
+          "reason": "The summary notes the station has been vacant since 2015."
+        },
+        {
+          "criterion": "$22 million renovation",
+          "satisfied": true,
+          "reason": "The summary includes the renovation cost of $22 million."
+        },
+        {
+          "criterion": "two years",
+          "satisfied": true,
+          "reason": "The summary mentions the renovation will take two years."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "the clickbait headline's vague teaser language repeated instead of the actual facts",
+          "violated": false,
+          "reason": "The summary presents factual details without repeating the clickbait teaser language."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 4521.1,
+      "summarizer_tokens": 657,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 812,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-059",
+      "category": "weather_alert_expiration_time",
+      "tier": "full",
+      "word_count": 45,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "flash flood warning until 9:15 p.m. Tuesday",
+          "satisfied": true,
+          "reason": "The summary states the warning is effective until 9:15 p.m. Tuesday."
+        },
+        {
+          "criterion": "up to 3 inches of rain already fallen",
+          "satisfied": true,
+          "reason": "The summary notes about 3 inches of rain fell in the past two hours."
+        },
+        {
+          "criterion": "residents urged to higher ground",
+          "satisfied": true,
+          "reason": "The summary says residents in low‑lying areas are urged to move to higher ground immediately."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "an incorrect or omitted expiration time for the warning",
+          "violated": false,
+          "reason": "The summary includes the correct expiration time and does not omit or misstate it."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 1593.6,
+      "summarizer_tokens": 689,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 921,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-060",
+      "category": "stock_ticker_heavy",
+      "tier": "full",
+      "word_count": 33,
+      "max_words": 40,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "S&P 500 up 0.4%",
+          "satisfied": true,
+          "reason": "The summary states the S&P 500 rose 0.4%."
+        },
+        {
+          "criterion": "Nasdaq up 0.9%",
+          "satisfied": true,
+          "reason": "The summary states the Nasdaq gained 0.9%."
+        },
+        {
+          "criterion": "Velocore up 6%",
+          "satisfied": true,
+          "reason": "The summary notes a 6% jump in Velocore shares."
+        },
+        {
+          "criterion": "oil down 1.5%",
+          "satisfied": true,
+          "reason": "The summary reports WTI crude fell 1.5%."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "an incorrect direction (up vs. down) for any of the listed indices",
+          "violated": false,
+          "reason": "All directions are correctly reported."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 1582.4,
+      "summarizer_tokens": 703,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 891,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-061",
+      "category": "recipe_embedded_offtopic",
+      "tier": "full",
+      "word_count": 29,
+      "max_words": 35,
+      "length_pass": true,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "record 340 entries",
+          "satisfied": true,
+          "reason": "The summary states the contest received a record 340 entries."
+        },
+        {
+          "criterion": "winning entry: lavender honey cake",
+          "satisfied": true,
+          "reason": "The summary notes that judges praised the winner, a lavender honey cake."
+        },
+        {
+          "criterion": "second place: sourdough by a 14-year-old",
+          "satisfied": true,
+          "reason": "The summary mentions second place was a sourdough loaf entered by a 14‑year‑old baker."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "reproducing the full recipe or ingredient list in the summary",
+          "violated": false,
+          "reason": "The summary does not contain the recipe or ingredient details."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": true,
+      "latency_ms": 776.2,
+      "summarizer_tokens": 686,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 800,
+      "judge_cost_usd": 0.0
+    },
+    {
+      "id": "news-062",
+      "category": "breaking_news_update_chain",
+      "tier": "quick",
+      "word_count": 36,
+      "max_words": 35,
+      "length_pass": false,
+      "accuracy_pass": true,
+      "must_include_results": [
+        {
+          "criterion": "two people rescued in total",
+          "satisfied": true,
+          "reason": "The summary states that officials confirmed two people rescued."
+        },
+        {
+          "criterion": "both in stable condition",
+          "satisfied": true,
+          "reason": "The summary notes that both rescued individuals are stable."
+        },
+        {
+          "criterion": "Route 9 underpass flooding",
+          "satisfied": true,
+          "reason": "The summary references a flooded Route 9 underpass."
+        }
+      ],
+      "must_not_include_results": [
+        {
+          "criterion": "reporting only the outdated 'one occupant rescued' figure from Update 1 as the final count",
+          "violated": false,
+          "reason": "The summary mentions the initial one‑occupant rescue only as an earlier event, not as the final count."
+        }
+      ],
+      "judge_error": null,
+      "judge_raw_response": null,
+      "overall_pass": false,
+      "latency_ms": 1732.5,
+      "summarizer_tokens": 689,
+      "summarizer_cost_usd": 0.0,
+      "judge_tokens": 893,
+      "judge_cost_usd": 0.0
+    }
+  ]
+}
