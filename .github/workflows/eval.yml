@@ -1,0 +1,58 @@
+name: Prompt Regression Eval
+
+on:
+  pull_request:
+    paths:
+      - "prompts/**"
+      - "eval/**"
+      - "golden_dataset.json"
+  workflow_dispatch:
+    inputs:
+      full_suite:
+        description: "Run the full 62-case suite instead of the quick 15-case subset"
+        type: boolean
+        default: false
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run summarizer against golden dataset
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.full_suite }}" = "true" ]; then
+            python eval/runner.py
+          else
+            python eval/runner.py --quick
+          fi
+
+      - name: Score outputs with LLM-as-judge
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python eval/scorer.py
+
+      - name: Compare against baseline
+        run: python eval/compare.py
+
+      - name: Upload run artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-results
+          path: |
+            results/latest_raw.json
+            results/latest_scored.json
+          retention-days: 14

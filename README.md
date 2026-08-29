@@ -42,6 +42,9 @@ model-regression-detection-system/
 │   ├── baseline.json          committed "known good" reference (tracked in git)
 │   ├── latest_raw.json        most recent raw run (gitignored, regenerated)
 │   └── latest_scored.json     most recent scored run (gitignored, regenerated)
+├── .github/
+│   └── workflows/
+│       └── eval.yml           CI: runs the eval pipeline on PRs, fails on regression
 ├── requirements.txt
 ├── .env.example
 └── .gitignore
@@ -126,6 +129,25 @@ distinct failure modes: prompt injection, empty input, causal-fallacy traps,
 stale/evolving data, sarcasm, etc.) for fast iteration; the full 62 cover
 everything from numeric fidelity to legal precision to adversarial input.
 
+## Continuous integration
+
+`.github/workflows/eval.yml` runs on every PR that touches `prompts/`, `eval/`,
+or `golden_dataset.json`:
+
+1. `eval/runner.py --quick` — the 15-case fast subset, for quick PR feedback
+2. `eval/scorer.py` — LLM-as-judge scoring
+3. `eval/compare.py` — fails the check (exit code 1) if anything regressed
+   against `results/baseline.json`
+
+Raw and scored results are uploaded as a workflow artifact regardless of
+pass/fail, so a failed check can be inspected without re-running anything.
+
+Trigger a full 62-case run manually via **Actions → Prompt Regression Eval →
+Run workflow**, checking "Run the full suite".
+
+**Requires a repo secret:** `GROQ_API_KEY` (Settings → Secrets and variables →
+Actions → New repository secret) — CI can't read your local `.env`.
+
 ## Status
 
 - [x] 1. Golden dataset (62 cases)
@@ -133,6 +155,6 @@ everything from numeric fidelity to legal precision to adversarial input.
 - [x] 3. Test runner (`eval/runner.py`)
 - [x] 4. Scoring engine (`eval/scorer.py`)
 - [x] 5. Diff/comparison logic (`eval/compare.py`)
-- [ ] 6. GitHub Actions workflow (`.github/workflows/eval.yml`)
+- [x] 6. GitHub Actions workflow (`.github/workflows/eval.yml`)
 - [ ] 7. Dockerfile
 - [ ] 8. Slack alerting (`eval/notify.py`)
