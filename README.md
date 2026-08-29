@@ -45,6 +45,8 @@ model-regression-detection-system/
 ├── .github/
 │   └── workflows/
 │       └── eval.yml           CI: runs the eval pipeline on PRs, fails on regression
+├── Dockerfile                 containerizes the pipeline (see "Running in Docker")
+├── .dockerignore
 ├── requirements.txt
 ├── .env.example
 └── .gitignore
@@ -101,6 +103,35 @@ reference point everything else is compared against:
 python eval/runner.py && python eval/scorer.py
 cp results/latest_scored.json results/baseline.json
 ```
+
+## Running in Docker
+
+Containerizes the pipeline so it runs identically locally and in CI.
+
+```bash
+docker build -t model-regression-eval .
+
+# Quick suite (default CMD if none given)
+docker run --rm --env-file .env -v "$(pwd)/results:/app/results" model-regression-eval
+
+# Any pipeline step explicitly
+docker run --rm --env-file .env -v "$(pwd)/results:/app/results" model-regression-eval eval/runner.py --quick
+docker run --rm --env-file .env -v "$(pwd)/results:/app/results" model-regression-eval eval/scorer.py
+docker run --rm -v "$(pwd)/results:/app/results" model-regression-eval eval/compare.py
+```
+
+**On Windows, use PowerShell, not Git Bash**, for the `-v` volume mount — Git
+Bash's automatic path conversion mangles `-v host:container` arguments and the
+mount silently fails (the container sees only what was baked into the image at
+build time, not your actual `results/` directory):
+
+```powershell
+docker run --rm --env-file .env -v "${PWD}\results:/app/results" model-regression-eval eval/runner.py --quick
+```
+
+The `results/` volume mount is what lets raw/scored output written inside the
+container land back on your host filesystem. API keys are never baked into the
+image — they're passed at `docker run` time via `--env-file .env`.
 
 ## The golden dataset
 
@@ -160,5 +191,5 @@ confirming the workflow genuinely blocks a regressed prompt from merging.
 - [x] 4. Scoring engine (`eval/scorer.py`)
 - [x] 5. Diff/comparison logic (`eval/compare.py`)
 - [x] 6. GitHub Actions workflow (`.github/workflows/eval.yml`)
-- [ ] 7. Dockerfile
+- [x] 7. Dockerfile
 - [ ] 8. Slack alerting (`eval/notify.py`)
