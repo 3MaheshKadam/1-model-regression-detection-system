@@ -1,5 +1,9 @@
 # Model Regression Detection System
 
+[![Prompt Regression Eval](https://github.com/3MaheshKadam/1-model-regression-detection-system/actions/workflows/eval.yml/badge.svg)](https://github.com/3MaheshKadam/1-model-regression-detection-system/actions/workflows/eval.yml)
+[![CI](https://github.com/3MaheshKadam/1-model-regression-detection-system/actions/workflows/ci.yml/badge.svg)](https://github.com/3MaheshKadam/1-model-regression-detection-system/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 CI/CD-style regression testing for LLM prompts. Every time a prompt changes, this
 pipeline re-runs it against a hand-curated golden dataset, scores the output with
 an LLM-as-judge across multiple dimensions, and flags regressions against a stored
@@ -43,12 +47,18 @@ model-regression-detection-system/
 │   ├── latest_raw.json        most recent raw run (gitignored, regenerated)
 │   └── latest_scored.json     most recent scored run (gitignored, regenerated)
 ├── .github/
+│   ├── dependabot.yml         weekly pip updates, monthly Docker and Actions updates
 │   └── workflows/
-│       └── eval.yml           CI: runs the eval pipeline on PRs, fails on regression
+│       ├── eval.yml           runs the eval pipeline on PRs, fails on regression
+│       ├── ci.yml             lint, import smoke test, dependency audit, secret scan
+│       ├── docker.yml         builds the image on PRs, publishes to GHCR from main
+│       └── codeql.yml         static analysis (runs only while the repo is public)
 ├── Dockerfile                 containerizes the pipeline (see "Running in Docker")
 ├── .dockerignore
 ├── requirements.txt
 ├── .env.example
+├── LICENSE
+├── SECURITY.md
 └── .gitignore
 ```
 
@@ -183,6 +193,25 @@ Verified end-to-end: a test PR reintroducing a guardrail-stripped prompt
 correctly failed the "Prompt Regression Eval" check on GitHub within ~1 minute,
 confirming the workflow genuinely blocks a regressed prompt from merging.
 
+### Other workflows
+
+| Workflow | Trigger | What it does |
+| --- | --- | --- |
+| `ci.yml` | every push to `main` and every PR | `ruff` (syntax and pyflakes), byte-compile, import smoke test, `pip-audit`, gitleaks secret scan |
+| `docker.yml` | PRs touching the image inputs; pushes to `main`; `v*` tags | builds the image; on `main` and tags also publishes it to `ghcr.io/3maheshkadam/1-model-regression-detection-system` |
+| `codeql.yml` | weekly and on PRs | CodeQL analysis. Skipped while the repo is private (needs GitHub Advanced Security) |
+
+Dependabot keeps `requirements.txt`, the Dockerfile base image and the Actions versions current.
+Dependencies use compatible-release pins (`openai~=3.24`) so builds are repeatable but still
+receive patch updates.
+
+## Security
+
+API keys never enter the image or the repository: they come from `.env` locally and from Actions
+secrets in CI. The eval workflow runs on `pull_request`, so secrets are not exposed to forks.
+Do not put confidential data in `golden_dataset.json`, because its inputs are sent to the LLM
+provider. See [SECURITY.md](SECURITY.md) for reporting vulnerabilities.
+
 ## Status
 
 - [x] 1. Golden dataset (62 cases)
@@ -193,3 +222,7 @@ confirming the workflow genuinely blocks a regressed prompt from merging.
 - [x] 6. GitHub Actions workflow (`.github/workflows/eval.yml`)
 - [x] 7. Dockerfile
 - [ ] 8. Slack alerting (`eval/notify.py`)
+
+## License
+
+[MIT](LICENSE) © 2026 Mahesh Kadam
