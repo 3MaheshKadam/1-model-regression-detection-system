@@ -1,6 +1,6 @@
 # Containerizes the eval pipeline so it runs identically in CI and locally.
 # Matches the Python version used in .github/workflows/eval.yml.
-FROM python:3.12-slim
+FROM python:3.15-slim
 
 WORKDIR /app
 
